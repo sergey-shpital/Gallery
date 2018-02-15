@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gallery</string>
+    <string name="bt_start">Start</string>
+    <string name="bt_stop">Stop</string>
+</resources>
