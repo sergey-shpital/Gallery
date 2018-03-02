@@ -35,6 +35,11 @@ dependencies {
     }
     annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.1.0"
 
+    //test AssertJ
+    testCompile 'org.assertj:assertj-core:3.9.0'
+    //testCompile 'org.assertj:assertj-core:2.9.0'
+
+
     //ButterKnife
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
