@@ -2,8 +2,10 @@ package album.pagenetsoft.com.gallery;
 
 import org.junit.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
+
 
 /**
  * Created by Sergey on 02.03.2018.
@@ -19,6 +21,10 @@ public class MediaEntityTest {
 
         assertEquals(me1,me2);
         assertNotEquals(me1,me3);
+
+        assertThat(me1).hasFieldOrPropertyWithValue("data","2");
+        assertThat(me2).hasNoNullFieldsOrPropertiesExcept("bitmap","md5");
+        assertThat(me1).hasSameHashCodeAs(me2);
     }
 
 }
